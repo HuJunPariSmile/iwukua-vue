@@ -9,7 +9,8 @@
             <li><v-btn class="primary white--text" href="https://github.com/AkyLau/Pago">Pago</v-btn></li>
             <li><v-btn class="primary white--text" href="https://github.com/AkyLau/iwukua">iwukua</v-btn></li>
             <li><v-btn class="primary white--text" href="https://github.com/AkyLau/iwukua-vue">iwukua-vue</v-btn></li>
-            <li><v-btn class="red white--text" href="https://github.com/AkyLau">My GitHub</v-btn></li>
+            <li><a class="red white--text btn btn--dark btn--raised" v-ripple href="https://github.com/AkyLau/">My GitHub</a></li>
+
         </ul>
 
     </div>
