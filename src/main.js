@@ -6,6 +6,7 @@ import router from './router'
 
 // 增加vuetify.js 组件
 import Vuetify from 'vuetify'
+import './assets/css/material-icons.css'
 import 'vuetify/dist/vuetify.min.css'
 Vue.use(Vuetify)
 
