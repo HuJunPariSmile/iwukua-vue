@@ -4,7 +4,7 @@
             <router-link class="primary white--text btn btn--dark btn--raised" :to="{ name: 'Login' }">Login</router-link>
             <router-link class="red white--text btn btn--dark btn--raised" :to="{ name: 'Register' }">Register</router-link>
         </div>
-        <img src="../assets/images/001.png" width="400">
+        <img src="../../assets/images/001.png" width="400">
         <h2>Iwukua</h2>
         <ul>
             <li><a v-ripple class="primary white--text btn btn--dark btn--raised" href="https://github.com/AkyLau/Pago">Pago</a></li>
