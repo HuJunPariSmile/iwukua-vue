@@ -92,13 +92,13 @@
                             </div>
                             <v-form class="auth-form form deprecated auth-form-invite register" v-model="valid" ref="form" dark lazy-validation>
                                 <div class="invite-header guild">
-                                    <h1 class="title">欢迎登录Iwukua</h1>
                                     <h2 class="old-h2">
                                         <v-avatar class="indigo lighten-2">
                                             <span class="white--text headline">I</span>
                                         </v-avatar>
                                         wukua
                                     </h2>
+                                    <h3 class="title">打造自己的工作流</h3>
                                 </div>
                                 <v-text-field
                                     label="用户名"
@@ -122,20 +122,19 @@
                                     :type="e1 ? 'password' : 'text'"
                                     :rules="passwordRules"
                                     counter
+                                    required
                                 ></v-text-field>
                                 <v-checkbox
-                                    label="Do you agree?"
+                                    label="记住密码?"
                                     v-model="checkbox"
                                     color="white"
                                     dark
-                                    :rules="[v => !!v || 'You must agree to continue!']"
-                                    required
                                 ></v-checkbox>
                                 <v-btn @click="clear">重置</v-btn>
                                 <v-btn
                                     @click="submit"
                                     :disabled="!valid"
-                                    color="indigo accent-1"
+                                    color="indigo lighten-1"
                                     dark
                                 >登录</v-btn>
                             </v-form>
@@ -157,7 +156,6 @@
         bottom: 0;
         box-shadow: 2px 0 4px 0 rgba(0,0,0,.5);
         box-sizing: border-box;
-        /*display: flex;*/
         justify-content: center;
         left: 0;
         padding: 10px;
@@ -221,6 +219,7 @@
         padding: 30px;
         width: 340px;
     }
+    .input-group__messages{text-align: left}
 </style>
 <script>
     export default {
@@ -230,8 +229,8 @@
             valid: true,
             e1: true,
             items: [
-                { icon: 'touch_app', text: '返回首页', 'href': '/', },
-                { icon: 'lightbulb_outline', text: 'Reminders' },
+                { icon: 'transfer_within_a_station', text: '返回首页', 'href': '/', },
+                { icon: 'face', text: 'About Me' },
                 { divider: true },
                 { icon: 'settings', text: 'Settings' },
                 { icon: 'chat_bubble', text: 'Trash' },
@@ -243,7 +242,7 @@
             name: '',
             nameRules: [
                 (v) => !!v || '用户名不能为空',
-                (v) => v && v.length <= 10 || 'Name must be less than 10 characters'
+                (v) => v && v.length <= 10 || '用户名必须大于6个字符小于20个字符'
             ],
             password: '',
             passwordRules: [

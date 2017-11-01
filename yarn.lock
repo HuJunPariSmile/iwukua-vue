@@ -4161,6 +4161,10 @@ vue-loader@^12.1.0:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.2.2"
 
+vue-material-design-icons@^0.7.1:
+  version "0.7.1"
+  resolved "http://registry.npm.taobao.org/vue-material-design-icons/download/vue-material-design-icons-0.7.1.tgz#3cbe06a1ec93ac3d333160c28a45dbb52ef98364"
+
 vue-router@^2.3.1:
   version "2.8.1"
   resolved "http://registry.npm.taobao.org/vue-router/download/vue-router-2.8.1.tgz#9833c9ee57ac83beb0269056fefee71713f20695"
